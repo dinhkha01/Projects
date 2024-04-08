@@ -1,0 +1,29 @@
+.favorite-product {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.favorite-product img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.favorite-product h2 {
+  text-align: center;
+}
+
+.favorite-product p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.favorite-product button {
+  display: block;
+  margin: 0 auto;
+}
+.tim {
+  text-align: center;
+  color: red;
+}

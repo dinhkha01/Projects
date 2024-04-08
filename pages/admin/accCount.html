@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Tài Khoản</title>
+    <link rel="stylesheet" href="/css/account.css" />
+  </head>
+
+  <body>
+    <div id="account-management" class="all">
+      <h2>Quản Lý Tài Khoản</h2>
+      <div id="search-container " class="search">
+        <input
+          type="text"
+          id="search-email"
+          placeholder="Nhập email để tìm kiếm"
+        />
+        <button onclick="searchAccount()">Tìm kiếm</button>
+        <button><a href="/pages/admin/adminCreaForm.html">CreaAcc</a></button>
+        <div id="search-results"></div>
+      </div>
+      <div class="table">
+        <table id="users-table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Mật khẩu</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/js/admin/account.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

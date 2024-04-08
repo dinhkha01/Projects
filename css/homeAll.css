@@ -1,0 +1,17 @@
+.cart {
+  padding: 20px;
+  color: black;
+}
+.heart {
+  color: black;
+}
+.cartHeart {
+  margin-right: 100px;
+}
+.add {
+  border-radius: 5px;
+  margin-right: 80px;
+}
+:hover.add {
+  background: rgb(44, 175, 231);
+}

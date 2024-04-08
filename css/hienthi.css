@@ -1,0 +1,42 @@
+.new-cars-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 13%;
+}
+.parameter {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 10% 70px;
+  /* display: flex; */
+}
+.parameter table {
+  table-layout: fixed;
+  width: 30%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  border-bottom: 1px solid black;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonAdd {
+  background-color: #313639;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.buttonAdd:hover {
+  background-color: #ff6347;
+}

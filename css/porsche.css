@@ -1,0 +1,115 @@
+.new-car_item {
+  display: flex;
+}
+.new-car_item ._left img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.new-cars-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 10% 70px;
+}
+.new-car_item ._left {
+  width: 25.5%;
+}
+.new-car_item ._right {
+  width: 74.5%;
+  padding-left: 6.5%;
+  box-sizing: border-box;
+}
+.m-09-techspecs-row td {
+  border-bottom: 1px solid black;
+}
+.m-09-techspecs-row {
+  width: 600px;
+  height: 44px;
+}
+.m-09-techspecs-pdk {
+  padding-left: 20px;
+}
+.logoporsche {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  background-color: #c587e1;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(17, 202, 230);
+  color: black;
+}
+.buttonL {
+  background-color: #fc2929;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.buttonL:hover {
+  background-color: rgb(201, 243, 77);
+  color: black;
+}
+.buttonD {
+  background-color: #f66a07;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.buttonD:hover {
+  background-color: rgb(243, 80, 77);
+  color: black;
+}
+.buttonE {
+  background-color: #278801;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.buttonE:hover {
+  background-color: rgb(175, 253, 31);
+  color: black;
+}
+
+.cart-user {
+  position: relative;
+}

@@ -1,0 +1,40 @@
+.name {
+  text-align: center;
+}
+.all {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttonall {
+  text-align: center;
+}
+.button {
+  border: none;
+  text-align: center;
+  background-color: #525557;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #ff6347;
+}
+.logo {
+  width: 20%;
+}
+
+.add {
+  text-align: center;
+}
+body {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
