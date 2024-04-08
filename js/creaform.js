@@ -3,7 +3,6 @@ function uuid() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Mong muốn của chúng ta
   Validator({
     form: "#form-1",
     formGroupSelector: ".form-group",
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data.idUser = uuid();
         data.cartUser = [];
         data.purchaseHistory = [];
-        // data.isAdmin = true;
+
         listUsers.push(data);
         localStorage.setItem("listUsers", JSON.stringify(listUsers));
         alert("Đăng kí thành công");

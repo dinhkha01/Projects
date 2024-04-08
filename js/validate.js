@@ -1,4 +1,4 @@
-// Đối tượng `Validator`
+
 function Validator(options) {
   function getParent(element, selector) {
     while (element.parentElement) {
@@ -11,7 +11,7 @@ function Validator(options) {
 
   var selectorRules = {};
 
-  // Hàm thực hiện validate
+
   function validate(inputElement, rule) {
     var errorElement = getParent(
       inputElement,
@@ -19,11 +19,10 @@ function Validator(options) {
     ).querySelector(options.errorSelector);
     var errorMessage;
 
-    // Lấy ra các rules của selector
+    
     var rules = selectorRules[rule.selector];
 
-    // Lặp qua từng rule & kiểm tra
-    // Nếu có lỗi thì dừng việc kiểm
+   
     for (var i = 0; i < rules.length; ++i) {
       switch (inputElement.type) {
         case "radio":
@@ -53,16 +52,16 @@ function Validator(options) {
     return !errorMessage;
   }
 
-  // Lấy element của form cần validate
+  
   var formElement = document.querySelector(options.form);
   if (formElement) {
-    // Khi submit form
+    
     formElement.onsubmit = function (e) {
       e.preventDefault();
 
       var isFormValid = true;
 
-      // Lặp qua từng rules và validate
+   
       options.rules.forEach(function (rule) {
         var inputElement = formElement.querySelector(rule.selector);
         var isValid = validate(inputElement, rule);
@@ -72,7 +71,7 @@ function Validator(options) {
       });
 
       if (isFormValid) {
-        // Trường hợp submit với javascript
+        
         if (typeof options.onSubmit === "function") {
           var enableInputs = formElement.querySelectorAll("[name]");
           var formValues = Array.from(enableInputs).reduce(function (
@@ -107,16 +106,16 @@ function Validator(options) {
           {});
           options.onSubmit(formValues);
         }
-        // Trường hợp submit với hành vi mặc định
+      
         else {
           formElement.submit();
         }
       }
     };
 
-    // Lặp qua mỗi rule và xử lý (lắng nghe sự kiện blur, input, ...)
+   
     options.rules.forEach(function (rule) {
-      // Lưu lại các rules cho mỗi input
+     
       if (Array.isArray(selectorRules[rule.selector])) {
         selectorRules[rule.selector].push(rule.test);
       } else {
@@ -126,12 +125,12 @@ function Validator(options) {
       var inputElements = formElement.querySelectorAll(rule.selector);
 
       Array.from(inputElements).forEach(function (inputElement) {
-        // Xử lý trường hợp blur khỏi input
+       
         inputElement.onblur = function () {
           validate(inputElement, rule);
         };
 
-        // Xử lý mỗi khi người dùng nhập vào input
+        
         inputElement.oninput = function () {
           var errorElement = getParent(
             inputElement,
@@ -147,10 +146,7 @@ function Validator(options) {
   }
 }
 
-// Định nghĩa rules
-// Nguyên tắc của các rules:
-// 1. Khi có lỗi => Trả ra message lỗi
-// 2. Khi hợp lệ => Không trả ra cái gì cả (undefined)
+
 Validator.isRequired = function (selector, message) {
   return {
     selector: selector,

@@ -38,11 +38,9 @@ function removeFromFavorites(id) {
   displayFavoriteProducts();
 }
 function logOut() {
-  // Xóa thông tin đăng nhập
   localStorage.removeItem("checkLogin");
   localStorage.removeItem("favorites");
   localStorage.removeItem("cart");
 
-  // Chuyển hướng đến trang đăng nhập
   window.location.href = "/pages/homeInOut.html";
 }

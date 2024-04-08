@@ -106,19 +106,15 @@ function load() {
 function addToFavorites(id) {
   const carPorsche = JSON.parse(localStorage.getItem("carPorsche")) || [];
 
-  // Lấy danh sách sản phẩm yêu thích từ Local Storage
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-  // Kiểm tra xem sản phẩm đã được thêm vào yêu thích trước đó chưa
   if (favorites.some((product) => product.id === id)) {
     alert("Sản phẩm đã được thêm vào yêu thích trước đó.");
     return;
   }
 
-  // Lấy sản phẩm từ danh sách sản phẩm Porsche theo id
   const productToAdd = carPorsche.find((product) => product.id === id);
 
-  // Kiểm tra xem sản phẩm tồn tại hay không
   if (!productToAdd) {
     alert("Không tìm thấy sản phẩm.");
     return;
