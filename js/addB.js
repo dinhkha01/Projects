@@ -419,6 +419,7 @@ document
       searchProduct();
     }
   });
+
 function sortByPrice(order) {
   // Lấy danh sách sản phẩm từ Local Storage
   let carBMW = JSON.parse(localStorage.getItem("carBMW")) || [];

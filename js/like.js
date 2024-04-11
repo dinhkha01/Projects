@@ -37,6 +37,7 @@ function removeFromFavorites(id) {
 
   displayFavoriteProducts();
 }
+
 function logOut() {
   localStorage.removeItem("checkLogin");
   localStorage.removeItem("favorites");
